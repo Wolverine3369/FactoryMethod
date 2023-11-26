@@ -1,0 +1,15 @@
+C:\Users\vlkma\factory method\bin\Debug\net7.0\factory method.exe
+C:\Users\vlkma\factory method\bin\Debug\net7.0\factory method.deps.json
+C:\Users\vlkma\factory method\bin\Debug\net7.0\factory method.runtimeconfig.json
+C:\Users\vlkma\factory method\bin\Debug\net7.0\factory method.dll
+C:\Users\vlkma\factory method\bin\Debug\net7.0\factory method.pdb
+C:\Users\vlkma\factory method\obj\Debug\net7.0\factory method.csproj.AssemblyReference.cache
+C:\Users\vlkma\factory method\obj\Debug\net7.0\factory method.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vlkma\factory method\obj\Debug\net7.0\factory method.AssemblyInfoInputs.cache
+C:\Users\vlkma\factory method\obj\Debug\net7.0\factory method.AssemblyInfo.cs
+C:\Users\vlkma\factory method\obj\Debug\net7.0\factory method.csproj.CoreCompileInputs.cache
+C:\Users\vlkma\factory method\obj\Debug\net7.0\factory method.dll
+C:\Users\vlkma\factory method\obj\Debug\net7.0\refint\factory method.dll
+C:\Users\vlkma\factory method\obj\Debug\net7.0\factory method.pdb
+C:\Users\vlkma\factory method\obj\Debug\net7.0\factory method.genruntimeconfig.cache
+C:\Users\vlkma\factory method\obj\Debug\net7.0\ref\factory method.dll
