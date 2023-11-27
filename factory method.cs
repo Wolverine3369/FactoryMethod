@@ -12,12 +12,12 @@ namespace Wolverine
     {
         public void Model2022()
         {
-            Console.WriteLine("I am a Ford model 2022 and I was produced by the Ford Factory!");
+            Console.WriteLine("I am the Ford model 2022 and I was produced by the Ford Factory!");
         }
 
         public void Model2023()
         {
-            Console.WriteLine("I am a Ford model 2023 and I was produced by the Ford Factory!");
+            Console.WriteLine("I am the Ford model 2023 and I was produced by the Ford Factory!");
         }
     }
 
@@ -25,12 +25,12 @@ namespace Wolverine
     {
         public void Model2022()
         {
-            Console.WriteLine("I am a Dodge model 2022 and I was produced by the Dodge Factory!");
+            Console.WriteLine("I am the Dodge model 2022 and I was produced by the Dodge Factory!");
         }
 
         public void Model2023()
         {
-            Console.WriteLine("I am a Dodge model 2023 and I was produced by the Dodge Factory!");
+            Console.WriteLine("I am the Dodge model 2023 and I was produced by the Dodge Factory!");
         }
     }
 
