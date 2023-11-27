@@ -1,70 +1,70 @@
 using System;
 
-// Product interface
-interface IProduct
+namespace Wolverine
 {
-    void Display();
-}
-
-// Concrete product A
-class ConcreteProductA : IProduct
-{
-    public void Display()
+    interface ICar
     {
-        Console.WriteLine("Concrete Product A");
-    }
-}
-
-// Concrete product B
-class ConcreteProductB : IProduct
-{
-    public void Display()
-    {
-        Console.WriteLine("Concrete Product B");
-    }
-}
-
-// Creator interface
-interface ICreator
-{
-    IProduct FactoryMethod();
-}
-
-// Concrete creator A
-class ConcreteCreatorA : ICreator
-{
-    public IProduct FactoryMethod()
-    {
-        return new ConcreteProductA();
-    }
-}
-
-// Concrete creator B
-class ConcreteCreatorB : ICreator
-{
-    public IProduct FactoryMethod()
-    {
-        return new ConcreteProductB();
-    }
-}
-
-class Program
-{
-    static void ClientCode(ICreator creator)
-    {
-        // Using the factory method to create a product
-        IProduct product = creator.FactoryMethod();
-        product.Display();
+        void Model2022();
+        void Model2023();
     }
 
-    //static void Main()
-    //{
-        // Client uses creator A
-    //    ICreator creatorA = new ConcreteCreatorA();
-    //    ClientCode(creatorA);
+    class Ford : ICar
+    {
+        public void Model2022()
+        {
+            Console.WriteLine("I am a Ford model 2022 and I was produced by the Ford Factory!");
+        }
 
-        // Client uses creator B
-    //    ICreator creatorB = new ConcreteCreatorB();
-    //    ClientCode(creatorB);
-    //}
+        public void Model2023()
+        {
+            Console.WriteLine("I am a Ford model 2023 and I was produced by the Ford Factory!");
+        }
+    }
+
+    class Dodge : ICar
+    {
+        public void Model2022()
+        {
+            Console.WriteLine("I am a Dodge model 2022 and I was produced by the Dodge Factory!");
+        }
+
+        public void Model2023()
+        {
+            Console.WriteLine("I am a Dodge model 2023 and I was produced by the Dodge Factory!");
+        }
+    }
+
+    interface IFactory
+    {
+        ICar ProduceCar();
+    }
+
+    class FordFactory : IFactory
+    {
+        public ICar ProduceCar()
+        {
+            return new Ford();
+        }
+    }
+
+    class DodgeFactory : IFactory
+    {
+        public ICar ProduceCar()
+        {
+            return new Dodge();
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            IFactory DodgeFactory = new DodgeFactory();
+            IFactory FordFactory = new FordFactory();
+            ICar Dodge = DodgeFactory.ProduceCar();
+            ICar Ford = FordFactory.ProduceCar();
+            Dodge.Model2022();
+            Ford.Model2023();
+        }
+    }
 }
