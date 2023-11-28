@@ -55,27 +55,30 @@ namespace Wolverine
         }
     }
 
-    class Program
+    class Customer
     {
-        public static void Customer2022(IFactory factory)
+        public static void Model2022(IFactory Factory)
         {
-            ICar Car = factory.ProduceCar();
+            ICar Car = Factory.ProduceCar();
             Car.Model2022();
         }
 
-        public static void Customer2023(IFactory factory)
+        public static void Model2023(IFactory Factory)
         {
-            ICar Car = factory.ProduceCar();
+            ICar Car = Factory.ProduceCar();
             Car.Model2023();
         }
+    }
 
+    class Program
+    {
         static void Main()
         {
             IFactory DodgeFactory = new DodgeFactory();
-            Customer2022(DodgeFactory);
+            Customer.Model2022(DodgeFactory);
 
             IFactory FordFactory = new FordFactory();
-            Customer2023(FordFactory);
+            Customer.Model2023(FordFactory);
         }
     }
 }
